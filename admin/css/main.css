@@ -1,0 +1,55 @@
+/* reset */
+* {
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.hidden{
+	display: none;
+}
+body{
+  background-color: #080F3A;
+  font-family: 'Permanent Marker';
+  color: #7C83AF;
+  margin: 0 auto;
+}
+.wrapper{
+  width: 960px;
+  margin : 0 auto;
+  height : auto;
+  text-align: center;
+
+}
+
+form{
+  border-radius: 30%;
+  padding: 20px;
+  margin: 0 auto;
+}
+label{
+  width: 300px;
+  padding: 20px;
+  font-size: 30px;
+
+}
+input{
+  width: 400px;
+  height: 50px;
+  padding: 20px;
+  font-size: 30px;
+  margin: 15px;
+}
+
+#goIn {
+  width: auto;
+  height: 50px !important ;
+  float: right;
+  font-size: 30px;
+  font-family: 'Raleway';
+}
+
+.welcomeMessage {
+  font-size: 40px;
+  font-family: 'Raleway';
+  padding: 50px;
+  margin-top: 30%;
+}

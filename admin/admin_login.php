@@ -26,29 +26,24 @@
 <head>
 <meta charset="UTF-8">
 <title>Welcome to your admin panel login</title>
+<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 </head>
 <body>
 	<?php if(!empty($message)){ echo $message;} ?>
-	<form action="admin_login.php" method="post">
-		<label>Username:</label>
-		<input type="text" name="username" value="">
-		<br>
-		<label>Password</label>
-		<input type="password" name="password" value="">
-		<br><br>
-		<input type="submit" name="submit" value="SUBMIT">
+	<div class="wrapper">
+		<form action="admin_login.php" method="post">
+			<label>Username:</label>
+			<input type="text" name="username" value="">
+			<br>
+			<label>Password</label>
+			<input type="password" name="password" value="">
+			<br><br>
+			<input id="goIn" type="submit" name="submit" value="SUBMIT">
+		</form>
+	</div>
 
-		<!--show the last login time and date -->
-		<br>
-		<?php
-		//echo "Last login was ", UTC_DATE($_SESSION['user_date']);
-		//echo $lastLogin;
-
-		echo "Last login was ",  date("M d Y H:i a");
-		//echo "Last login was" , $_SESSION['user_date'];
-		//echo date("Last login was" + "M d Y H:i a", $lastLogin);
-		 ?>
-	</form>
 
 </body>
 </html>
