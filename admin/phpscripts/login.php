@@ -15,7 +15,7 @@
 			$id = $founduser['user_id'];
 			$_SESSION['user_id'] = $id;
 			$_SESSION['user_name']= $founduser['user_fname'];
-			$_SESSION['user_date']=$loginTime;
+			$_SESSION['user_date']=$founduser['user_date'];
 
 			if(mysqli_query($link, $loginstring)){
 				$update = "UPDATE tbl_user SET user_ip='{$ip}' WHERE user_id={$id}";
@@ -32,7 +32,7 @@
 			//maybe the lockout function is in here?
 			function lockOut($username, $password){
 					if(!($username) && !($password)){
-						
+
 					}
 			}
 		}
